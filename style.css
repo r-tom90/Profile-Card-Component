@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --cyan: hsl(185, 75%, 39%);
+  --desaturated-blue: hsl(229, 23%, 23%);
+  --grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --main-font: "Kumbh Sans";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100vh;
+  width: auto;
+}
+/*
+Typographic tweaks!
+4. Add accessible line-height
+5. Improve text rendering
+*/
+body {
+  font-family: var(--main-font), sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: "Kumbh Sans", sans-serif;
+  background: url(../images/bg-pattern-bottom.svg) bottom -600px right -150px
+      no-repeat,
+    url(../images/bg-pattern-top.svg) top -500px left -200px no-repeat;
+  background-color: var(--cyan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 350px;
+  background: #fefefe;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card .card-header img {
+  width: 100%;
+  height: auto;
+}
+
+.card .card-content {
+  height: 140px;
+}
+
+.card .card-content img {
+  width: 30%;
+  border-radius: 50%;
+  transform: translateY(-55%);
+  border: 5px solid #fefefe;
+}
+
+.card .card-content p {
+  transform: translateY(-180%);
+  color: var(--grayish-blue);
+  font-size: 0.8rem;
+}
+
+.card .card-content p:first-of-type {
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--desaturated-blue);
+}
+
+.card .card-content p:first-of-type span {
+  color: var(--grayish-blue);
+  font-weight: normal;
+  word-spacing: 0.25rem;
+}
+
+.card .card-footer {
+  padding: 1.25rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 1px solid #d8d9df;
+  color: var(--desaturated-blue);
+}
+
+.card .card-footer .footer-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .card-footer .footer-item .status {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.card .card-footer .footer-item .item-name {
+  color: var(--grayish-blue);
+  font-size: 10px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 375px) {
+}
