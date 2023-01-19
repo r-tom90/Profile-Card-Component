@@ -35,9 +35,9 @@ body {
   font-size: 18px;
   line-height: 1.5;
   font-family: "Kumbh Sans", sans-serif;
-  background: url(../images/bg-pattern-bottom.svg) bottom -600px right -150px
+  background: url(./images/bg-pattern-bottom.svg) bottom -600px right -150px
       no-repeat,
-    url(../images/bg-pattern-top.svg) top -500px left -200px no-repeat;
+    url(./images/bg-pattern-top.svg) top -500px left -200px no-repeat;
   background-color: var(--cyan);
   display: flex;
   flex-direction: column;
