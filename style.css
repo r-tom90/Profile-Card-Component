@@ -38,8 +38,8 @@ body {
   height: 100vh;
   display: grid;
   place-content: center;
-  background: url("../images/bg-pattern-top.svg") -70% 200%,
-    url("../images/bg-pattern-bottom.svg") 170% -130%;
+  background: url("./images/bg-pattern-top.svg") -70% 200%,
+    url("./images/bg-pattern-bottom.svg") 170% -130%;
   background-color: var(--dark-cyan);
   background-repeat: no-repeat;
 }
